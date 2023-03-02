@@ -4,6 +4,10 @@ import "react-slideshow-image/dist/styles.css";
 import Button from "../atoms/Button";
 import Image from "next/image";
 import Link from "next/link";
+import TypewriterComponent from "typewriter-effect";
+
+
+
 
 const divStyle = {
   display: "flex",
@@ -32,20 +36,22 @@ const slideImages = [
   },
 ];
 
+
+
 const ImageHome = () => {
   return (
-    <div className="slide-container">
+      <div className="slide-container ">
       <Slide duration={3000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-              className="flex flex-col  "
+              className="flex flex-col"
               style={{
                 ...divStyle,
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className=" flex flex-col justify-center absolute mt-48">
+              <div className=" flex flex-col justify-center absolute mt-48   ">
                 <Link href="www.facebook.com">
                   <Image
                     src="/images/Facebook2.png"
@@ -88,7 +94,7 @@ const ImageHome = () => {
                 </Link>
               </div>
               <div>
-                <h1 className=" text-5xl text-white relative ml-20 mt-60 w-1/5">
+                <h1 className=" text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent relative ml-20 mt-60 w-[25%] blinking-cursor font-extrabold">
                   {" "}
                   {slideImage.caption}{" "}
                 </h1>
@@ -96,7 +102,7 @@ const ImageHome = () => {
                   {slideImage.desc}
                 </p>
               </div>
-              <div className="ml-20 bg-white w-[22.5%]  rounded-full mt-5 h-14 flex    ">
+              <div className="ml-20 bg-white w-[27%] md:w[22.5%] rounded-full mt-5 h-14 flex    ">
                 <Button style="px-[4%] ml-5  " title="PELAJARI LEBIH LANJUT" />
                 <span className="pt-3 pl-3 text-[20px]">🡪</span>
               </div>

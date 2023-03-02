@@ -13,10 +13,9 @@ const index = () => {
         title="Home"
         description="Description of Create Next Page by Faizmul"
       />
-
       <ImageHome />
-      <ProgramList />
       <Section />
+      <ProgramList />
     </BlankTemplate>
   );
 };

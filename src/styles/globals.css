@@ -2,6 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+  .blinking-cursor:after {
+    content: '|';
+    @apply text-purple-700;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
 @layer base {
   body {
     @apply lg:text-xl text-sm overflow-x-hidden;

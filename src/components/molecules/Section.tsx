@@ -16,9 +16,9 @@ const section = () => {
           />
         </div>
         <div className="w-[0.1rem]"></div>
-        <div className="w-[17rem] flex justify-around flex-col">
+        <div className="w-[17rem] flex justify-around  flex-col flex-wrap pr-5 text-justify pt-10">
           <div>
-            <h3 className="pb-5 text-[22px] font-semibold text-[#5D5A88]">
+            <h3 className="p-5 text-[22px] font-semibold text-[#5D5A88]">
               Lorem Ipsum Title
             </h3>
             <p className="text-[18px] font-normal text-[#9795B5]">
@@ -27,7 +27,7 @@ const section = () => {
             </p>
           </div>
           <div>
-            <h3 className="pb-5 text-[22px] font-semibold text-[#5D5A88]">
+            <h3 className="p-5 text-[22px] font-semibold text-[#5D5A88]">
               Lorem Ipsum Title
             </h3>
             <p className="text-[18px] font-normal text-[#9795B5]">
