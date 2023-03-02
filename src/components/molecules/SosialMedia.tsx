@@ -7,7 +7,7 @@ const SosialMedia = () => {
   return (
 
     <div>
-      <div className=" flex flex-wrap justify-center mt-14">
+      <div className=" flex flex-wrap justify-center mt-14 font-extrabold text-3x1 text-[#A03C78]">
         Sosial Media Kami
       </div>
       <div className=" flex flex-wrap justify-center p-14 gap-3">

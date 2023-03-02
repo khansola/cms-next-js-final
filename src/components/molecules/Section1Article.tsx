@@ -60,7 +60,7 @@ const Section1Article = () => {
                 Fusce mollis sollicitudin orci eget ullamcorper. Curabitur velit mauris, lobortis vitae pretium a, blandit et mi. Aliquam erat volutpat. Ut maximus finibus nisl, sit amet fermentum ante viverra quis. Nunc et consectetur lacus. Pellentesque nulla eros, tempus tincidunt ante ac, dictum facilisis dolor. Donec vel consectetur ex. Phasellus vehicula, ligula sit amet facilisis vestibulum, erat tellus convallis velit, sit amet scelerisque est lectus vitae odio. Vestibulum eu fermentum neque. Etiam at dapibus quam. Cras felis sapien, placerat quis vestibulum vel, dignissim eget enim. Duis consectetur vitae est id congue. Suspendisse in ex interdum, tincidunt erat vehicula, tristique arcu. Phasellus in metus eget odio pharetra eleifend pretium et quam.
                 Nulla a tincidunt dui, nec pretium augue. Sed erat lectus, dictum et vehicula ut, sodales malesuada arcu. Vivamus vel neque mi. Donec maximus nibh quam, in congue enim suscipit sit amet. Donec vel dolor pharetra, efficitur leo quis, lacinia augue. Quisque eget ex mollis, dictum quam sed, tincidunt odio. Mauris accumsan sed odio sit amet ultricies. Sed posuere leo et feugiat feugiat. Etiam risus ligula, feugiat at nunc in, ullamcorper feugiat lacus. Phasellus ipsum lectus, gravida sed rhoncus et, fermentum ultricies ex. Aliquam mattis quam quis odio blandit, aliquam hendrerit nunc fringilla.
             </p>
-            <div className=' mt-5 px-[7%]'>
+            <div className=' mt-5 px-[7%]  '>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider', width: '100%' }} />
             </div>
         </div>

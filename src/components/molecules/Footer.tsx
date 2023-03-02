@@ -60,7 +60,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8 pl-24">
+      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8 pl-24 pt-16">
         <div className="p-5">
           <ul>
             <Image

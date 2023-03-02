@@ -40,7 +40,7 @@ const slideImages = [
 
 const ImageHome = () => {
   return (
-      <div className="slide-container ">
+    <div className="slide-container ">
       <Slide duration={3000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
@@ -51,60 +51,62 @@ const ImageHome = () => {
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className=" flex flex-col justify-center absolute mt-48   ">
-                <Link href="www.facebook.com">
-                  <Image
-                    src="/images/Facebook2.png"
-                    alt="image"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-                <Link href="www.twitter.com">
-                  <Image
-                    src="/images/Twitter2.png"
-                    alt="image"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-                <Link href="www.instagram.com">
-                  <Image
-                    src="/images/Instagram2.png"
-                    alt="image"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-                <Link href="www.linkedin.com">
-                  <Image
-                    src="/images/LinkedIn2.png"
-                    alt="image"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-                <Link href="www.youtube.com">
-                  <Image
-                    src="/images/YouTube2.png"
-                    alt="image"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-              </div>
+              <div className="bg-">
+                <div className=" flex flex-col justify-center absolute mt-48   ">
+                  <Link href="www.facebook.com">
+                    <Image
+                      src="/images/Facebook2.png"
+                      alt="image"
+                      width={50}
+                      height={50}
+                    />
+                  </Link>
+                  <Link href="www.twitter.com">
+                    <Image
+                      src="/images/Twitter2.png"
+                      alt="image"
+                      width={50}
+                      height={50}
+                    />
+                  </Link>
+                  <Link href="www.instagram.com">
+                    <Image
+                      src="/images/Instagram2.png"
+                      alt="image"
+                      width={50}
+                      height={50}
+                    />
+                  </Link>
+                  <Link href="www.linkedin.com">
+                    <Image
+                      src="/images/LinkedIn2.png"
+                      alt="image"
+                      width={50}
+                      height={50}
+                    />
+                  </Link>
+                  <Link href="www.youtube.com">
+                    <Image
+                      src="/images/YouTube2.png"
+                      alt="image"
+                      width={50}
+                      height={50}
+                    />
+                  </Link>
+                </div>
               <div>
-                <h1 className=" text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent relative ml-20 mt-60 w-[25%] blinking-cursor font-extrabold">
+                <h1 className=" text-3xl md:text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent ml-20 mt-60 w-[60%] blinking-cursor font-extrabold">
                   {" "}
                   {slideImage.caption}{" "}
                 </h1>
-                <p className=" mt-5 w-2/6 text-white ml-20">
+                <p className=" mt-5 w-4/6 md:w-2/6 text-white ml-20">
                   {slideImage.desc}
                 </p>
               </div>
-              <div className="ml-20 bg-white w-[27%] md:w[22.5%] rounded-full mt-5 h-14 flex    ">
-                <Button style="px-[4%] ml-5  " title="PELAJARI LEBIH LANJUT" />
+              <div className=" self-start justify-self-start w-full bg-white rounded-full mt-5 h-14 flex border border-indigo-700    ">
+                <Button style="px-[4%] ml-5 flex border border-indigo-700   " title="PELAJARI LEBIH LANJUT" />
                 <span className="pt-3 pl-3 text-[20px]">🡪</span>
+              </div>
               </div>
             </div>
           </div>

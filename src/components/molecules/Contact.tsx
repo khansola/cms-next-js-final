@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <>
       <div className="w-[65%]">
+        <div className="pl-10">
         <h1 className="text-[#A03C78] h-auto font-bold font-dmsans text-[3rem] pt-14 pb-5 leading-10">
           Get in touch today
         </h1>
@@ -30,6 +31,7 @@ const Contact = () => {
           <div className="">
             <Button title="Send message" />
           </div>
+        </div>
         </div>
       </div>
     </>

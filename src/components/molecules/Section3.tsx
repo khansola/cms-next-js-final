@@ -31,7 +31,7 @@ const Section3 = () => {
                     return (
                         <div key={i} className='flex flex-wrap justify-center'>
                             <Card sx={{ maxWidth: 420, height: 450 }}>
-                                <div className='w-[100%]'>
+                                <div className='w-[100%] flex flex-wrap justify-center '>
                                     <Image
                                         src={e.image}
                                         alt={"vector.png"}

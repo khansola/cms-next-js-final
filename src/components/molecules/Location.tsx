@@ -17,7 +17,7 @@ const Location = () => {
                 </Link>
             </div>
             <div className='p-28' >
-                <h2 className=' font-dmsans text-[#A03C78] text-3xl'>Lokasi kami</h2>
+                <h2 className=' font-dmsans text-[#A03C78] text-4xl font-extrabold '>Lokasi kami</h2>
                 <p className='pt-10 w-[100%]'>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit dolor semper at ac tempus enim laoreet massa non.
                 </p>
@@ -26,7 +26,8 @@ const Location = () => {
                         <li>
                             <Button title="Send message" />
                         </li>
-                        <li>                    <Button title="Hubungi Whatapps" />
+                        <li>
+                            <Button title="Hubungi Whatapps" />
                         </li>
                     </ul>
                 </div>
