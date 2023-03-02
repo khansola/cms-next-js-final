@@ -25,7 +25,7 @@ const Section3 = () => {
 
 
     return (
-        <div>
+        <div className='flex flex-wrap gap-5 justify-center'>
             {
                 ProgramList.map((e, i) => {
                     return (
@@ -35,12 +35,12 @@ const Section3 = () => {
                                     <Image
                                         src={e.image}
                                         alt={"vector.png"}
-                                        width={400}
-                                        height={220}
+                                        width={300}
+                                        height={160}
                                     ></Image>
                                 </div>
                                 <CardContent>
-                                    <Typography className='' gutterBottom variant="h5" component="div">
+                                    <Typography className='text-center' gutterBottom variant="h5" component="div">
                                         {e.caption}
                                     </Typography>
                                 </CardContent>

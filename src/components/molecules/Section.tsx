@@ -4,7 +4,7 @@ const section = () => {
   return (
     <>
       <div
-        className="flex flex-row  flex-wrap justify-around py-20
+        className="flex flex-row  flex-wrap justify-center gap-10 py-20
       "
       >
         <div>

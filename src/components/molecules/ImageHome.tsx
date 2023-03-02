@@ -39,20 +39,40 @@ const slideImages = [
 
 
 const ImageHome = () => {
+  
   return (
     <div className="slide-container ">
       <Slide duration={3000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <div
-              className="flex flex-col"
-              style={{
-                ...divStyle,
-                backgroundImage: `url(${slideImage.url})`,
+            <div 
+            className="
+            flex 
+            flex-col" 
+            style={{ ...divStyle,
+            backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="bg-">
-                <div className=" flex flex-col justify-center absolute mt-48   ">
+              <div className="flex flex-col">
+                <div>
+                  <h1 className=" text-3xl md:text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent ml-20 mt-60 w-[60%] blinking-cursor font-extrabold">
+                    {" "}
+                    {slideImage.caption}{" "}
+                  </h1>
+                  <p className=" mt-5 w-2/6 md:w-2/6 text-white ml-20">
+                    {slideImage.desc}
+                  </p>
+                </div>
+                <div className=" self-start justify-self-start bg-white rounded-full  ml-16 mt-5 h-14 flex border border-indigo-700    ">
+                  <Button style="px-[4%]  flex border border-indigo-700   " title="PELAJARI LEBIH LANJUT" />
+                  <span className="pt-3 pl-3 text-[20px]">🡪</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slide>
+      <div className=" flex flex-col justify-center fixed mt-64 top-16   ">
                   <Link href="www.facebook.com">
                     <Image
                       src="/images/Facebook2.png"
@@ -94,24 +114,6 @@ const ImageHome = () => {
                     />
                   </Link>
                 </div>
-              <div>
-                <h1 className=" text-3xl md:text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent ml-20 mt-60 w-[60%] blinking-cursor font-extrabold">
-                  {" "}
-                  {slideImage.caption}{" "}
-                </h1>
-                <p className=" mt-5 w-4/6 md:w-2/6 text-white ml-20">
-                  {slideImage.desc}
-                </p>
-              </div>
-              <div className=" self-start justify-self-start w-full bg-white rounded-full mt-5 h-14 flex border border-indigo-700    ">
-                <Button style="px-[4%] ml-5 flex border border-indigo-700   " title="PELAJARI LEBIH LANJUT" />
-                <span className="pt-3 pl-3 text-[20px]">🡪</span>
-              </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slide>
     </div>
   );
 };
