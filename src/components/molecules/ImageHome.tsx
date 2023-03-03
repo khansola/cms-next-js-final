@@ -16,7 +16,6 @@ const divStyle = {
   height: "768px",
   width: "100%",
 };
-console.log({ divStyle });
 
 const slideImages = [
   {
@@ -39,7 +38,7 @@ const slideImages = [
 
 
 const ImageHome = () => {
-  
+
   return (
     <div className="slide-container ">
       <Slide duration={3000}>

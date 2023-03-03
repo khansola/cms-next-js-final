@@ -16,7 +16,7 @@ const ImageContent = () => {
       <Image
         // loader={myLoader}
         className="h-[100%] w-[100%]"
-        src="/images/container.png"
+        src="/images/Container9.png"
         alt="image"
         width={675.68}
         height={919}

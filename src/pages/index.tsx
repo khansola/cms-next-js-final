@@ -5,14 +5,21 @@ import PrimaryNavigation from "@/components/molecules/PrimaryNavigation";
 import Section from "@/components/molecules/Section";
 import ImageHome from "@/components/molecules/ImageHome";
 import ProgramList from "@/components/molecules/ProgramList";
+import { DarkMode } from "@mui/icons-material";
+import DarkModeToggle from "@/components/molecules/DarkModeToggle";
+import axios from "axios";
 
-const index = () => {
+const index = (props:any) => {
+  const {data} = props
+  console.log(data);
+  
   return (
     <BlankTemplate>
       <CommonSEO
         title="Home"
         description="Description of Create Next Page by Faizmul"
       />
+      <DarkModeToggle />
       <ImageHome />
       <Section />
       <ProgramList />
@@ -21,3 +28,14 @@ const index = () => {
 };
 
 export default index;
+
+
+export async function getStaticProps (){
+  const data = await axios.get("http://localhost:8080/v1/articles")
+  return {
+    props:{
+      data:data.data
+    }
+  }
+  
+}

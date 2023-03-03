@@ -23,9 +23,9 @@ module.exports = {
       dmsans: "DM Sans",
     },
     extend: {
-      // backgroundImage: {
-      //   sehijraBg: "url('/images/Container.png')",
-      // },
+      backgroundImage: {
+        puan: "url('/images/Container9.png')",
+      },
     },
   },
   plugins: [],

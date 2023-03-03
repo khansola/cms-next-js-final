@@ -1,12 +1,22 @@
 import { NextPage } from "next";
 import Footer from "../molecules/Footer";
 import PrimaryNavigation from "../molecules/PrimaryNavigation";
+import { useState, useEffect } from "react"
+import Axios  from "axios";
+import axios from "axios";
 
 type props = {
   children: React.ReactNode;
 };
 
 const BlankTemplate: NextPage<props> = ({ children }) => {
+ const [Data, setData] = useState([])
+ useEffect ( () => {
+  axios.get("http://localhost:8080/v1/articles").then((res) => {
+    console.log(res);
+  })
+ })
+
   return (
     <>
       <div className="min-h-screen flex w-full flex-col ">

@@ -12,7 +12,7 @@ const index = () => {
         title="Home"
         description="Description of Create Next Page by Russ"
       />
-      <div className="w-full flex gap-14 justify-beetween pb-20 ">
+      <div className="w-full flex gap-14 justify-beetween pb-20 md:bg-none bg-puan object-fill ">
         <ImageContent />
         <Contact />
       </div>
