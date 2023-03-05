@@ -2,8 +2,9 @@ import { CommonSEO } from "@/components/SEO";
 import BlankTemplate from "@/components/templates/BlankTemplate";
 import Contact from "@/components/molecules/Contact";
 import ImageContent from "@/components/molecules/ImageContent";
-import Location from "@/components/molecules/Location";
 import SosialMedia from "@/components/molecules/SosialMedia";
+import DarkModeToggle from "@/components/molecules/DarkModeToggle";
+import Maps from "@/components/molecules/Maps";
 
 const index = () => {
   return (
@@ -14,10 +15,14 @@ const index = () => {
       />
       <div className="w-full flex gap-14 justify-beetween pb-20 md:bg-none bg-puan object-fill ">
         <ImageContent />
+        <DarkModeToggle />
         <Contact />
       </div>
       <div>
-      <Location />
+      <DarkModeToggle />
+      <Maps />
+
+
       </div>
       <div>
       <SosialMedia />

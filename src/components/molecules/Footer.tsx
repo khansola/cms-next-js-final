@@ -60,7 +60,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8 pl-24 pt-16">
+      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8 pl-24 pt-16 dark:bg-[#1a202c]">
         <div className="p-5">
           <ul>
             <Image
@@ -69,7 +69,7 @@ function Footer() {
               height={95}
               width={88}
             />
-            <p className="w-4/6 pb-4 font-semibold font text-[18px]">
+            <p className="w-4/6 pb-4 font-semibold font text-[18px] text-[#5D5A88] hover:text-blue-600 cursor-pointer">
               Konsultan, Advokasi, Pelatihan & Pendidikan Disabilitas Therapist
               Terapi Wicara untuk Disabilitas Pendengaran
             </p>
@@ -78,7 +78,7 @@ function Footer() {
                 return (
                   <li
                     key={i}
-                    className="pb-2 text-[#1E1E1E]  font-normal hover:text-blue-600 cursor-pointer"
+                    className="pb-2 text-[#5D5A88]  font-normal hover:text-blue-600 cursor-pointer"
                   >
                     <Links href={e.href} image={e.image} alt={e.alt} />
                   </li>
@@ -88,7 +88,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="flex w-full">
+        <div className="flex w-full #4a5568">
           <div className="p-5 flex flex-wrap w-auto">
             <ul>
               <p className=" pb-8 text-[#843C74] font-bold text-[24px]">
@@ -98,7 +98,7 @@ function Footer() {
                 return (
                   <li
                     key={i}
-                    className="pb-2 text-[#1E1E1E] font-semibold hover:text-blue-600 cursor-pointer"
+                    className="pb-2 text-[#5D5A88] font-semibold hover:text-blue-600 cursor-pointer"
                   >
                     <Links href={e.href} title={e.title} />
                   </li>
@@ -109,16 +109,16 @@ function Footer() {
 
           <div className="w-1/5"></div>
 
-          <div className="p-5 flex flex-wrap w-auto">
+          <div className="p-5 flex flex-wrap w-auto ">
             <ul>
-              <p className=" text-[24px] pb-8 text-[#843C74] font-bold">
+              <p className=" text-[24px] text-[#843C74] pb-8  font-bold">
                 <Link href={"/"}>Toko</Link>
               </p>
               {links.slice(4, 7).map((e, i) => {
                 return (
                   <li
                     key={i}
-                    className="pb-2 text-[#1E1E1E]  font-semibold hover:text-blue-600 cursor-pointer"
+                    className="pb-2 text-[#5D5A88]  font-semibold hover:text-blue-600 cursor-pointer"
                   >
                     <Links href={e.href} title={e.title} />
                   </li>
@@ -128,7 +128,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className="flex flex-col justify-center items-center text-center p-5 tracking-[0.4rem]">
+      <div className="flex flex-col justify-center items-center text-center p-5 tracking-[0.4rem] dark:bg-[#1a202c]">
         <hr className="w-[100%] h-[1px] mx-auto bg-[black] border-0 my-8" />
         <p className="text-[#767494]  text-[18px]">
           © 2018 - 2023 Sehjira. Hak Cipta All Rights Reserved |{" "}

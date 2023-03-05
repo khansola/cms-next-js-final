@@ -40,7 +40,7 @@ const slideImages = [
 const ImageHome = () => {
 
   return (
-    <div className="slide-container ">
+    <div className="slide-container  ">
       <Slide duration={3000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
@@ -52,9 +52,9 @@ const ImageHome = () => {
             backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col ">
                 <div>
-                  <h1 className=" text-3xl md:text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent ml-20 mt-60 w-[60%] blinking-cursor font-extrabold">
+                  <h1 className=" text-3xl md:text-5xl bg-gradient-to-r from-[#A03c78] to-purple-400 bg-clip-text text-transparent ml-20 mt-60 w-[53%] blinking-cursor font-extrabold ">
                     {" "}
                     {slideImage.caption}{" "}
                   </h1>
@@ -62,16 +62,16 @@ const ImageHome = () => {
                     {slideImage.desc}
                   </p>
                 </div>
-                <div className=" self-start justify-self-start bg-white rounded-full  ml-16 mt-5 h-14 flex border border-indigo-700    ">
-                  <Button style="px-[4%]  flex border border-indigo-700   " title="PELAJARI LEBIH LANJUT" />
-                  <span className="pt-3 pl-3 text-[20px]">🡪</span>
+                <div className=" self-start justify-self-start  bg-white rounded-full  ml-16 mt-5 h-14 flex border-black border-4 text-[#843C74] font-bold    ">
+                  <Button style=" items-center justify-center flex  " title="PELAJARI LEBIH LANJUT" />
+                  <span className="pt-3 pl-3 text-[29px]">🡪</span>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </Slide>
-      <div className=" flex flex-col justify-center fixed mt-64 top-16   ">
+      <div className=" flex flex-col justify-center fixed mt-52 top-16   ">
                   <Link href="www.facebook.com">
                     <Image
                       src="/images/Facebook2.png"

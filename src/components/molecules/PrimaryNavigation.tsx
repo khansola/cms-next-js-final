@@ -9,6 +9,7 @@ const PrimaryNavigation = () => {
     <>
       <nav
         className="
+        dark:bg-[#1a202c]
           w-full
           py-4
           md:py-0

@@ -10,16 +10,11 @@ type props = {
 };
 
 const BlankTemplate: NextPage<props> = ({ children }) => {
- const [Data, setData] = useState([])
- useEffect ( () => {
-  axios.get("http://localhost:8080/v1/articles").then((res) => {
-    console.log(res);
-  })
- })
+
 
   return (
     <>
-      <div className="min-h-screen flex w-full flex-col ">
+      <div className="min-h-screen flex w-full flex-col dark:bg-[#1a202c] ">
         <PrimaryNavigation />
         {children}
       </div>
