@@ -5,7 +5,7 @@ import Button from "../atoms/ButtonContact";
 const Contact = () => {
   return (
     <>
-      <div className="w-[65%]">
+      <div className="w-[65%] ">
         <div className="pl-10">
           <div className="flex flex-col justify-between">
             <h1 className="text-[#A03C78] h-auto font-bold font-dmsans text-[3rem] pt-14 pb-5 leading-10">

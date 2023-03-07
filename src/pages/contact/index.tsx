@@ -18,15 +18,9 @@ const index = () => {
         <DarkModeToggle />
         <Contact />
       </div>
-      <div>
       <DarkModeToggle />
       <Maps />
-
-
-      </div>
-      <div>
       <SosialMedia />
-      </div>
     </BlankTemplate>
   );
 };

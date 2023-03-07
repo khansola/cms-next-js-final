@@ -1,12 +1,9 @@
 import { CommonSEO } from "@/components/SEO";
-import Footer from "@/components/molecules/Footer";
 import BlankTemplate from "@/components/templates/BlankTemplate";
-import PrimaryNavigation from "@/components/molecules/PrimaryNavigation";
 import Section from "@/components/molecules/Section";
 import ImageHome from "@/components/molecules/ImageHome";
 import ProgramList from "@/components/molecules/ProgramList";
 import DarkModeToggle from "@/components/molecules/DarkModeToggle";
-
 import axios from "axios";
 import Galery from "@/components/molecules/Article1";
 import Article1 from "@/components/molecules/Galery";

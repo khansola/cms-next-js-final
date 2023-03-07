@@ -7,8 +7,6 @@ import Link from "next/link";
 
 
 
-
-
 const divStyle = {
   display: "flex",
   backgroundSize: "cover",
@@ -85,7 +83,7 @@ const ImageHome = () => {
       <div className=" flex flex-col justify-center fixed mt-36 top-10   ">
         <Link href="www.facebook.com">
           <Image
-            src="/images/Facebook2.png"
+            src="/images/Facebook.svg"
             alt="image"
             width={50}
             height={50}
@@ -93,7 +91,7 @@ const ImageHome = () => {
         </Link>
         <Link href="www.twitter.com">
           <Image
-            src="/images/Twitter2.png"
+            src="/images/Twitter.svg"
             alt="image"
             width={50}
             height={50}
@@ -101,7 +99,7 @@ const ImageHome = () => {
         </Link>
         <Link href="www.instagram.com">
           <Image
-            src="/images/Instagram2.png"
+            src="/images/Instagram.svg"
             alt="image"
             width={50}
             height={50}
@@ -109,7 +107,7 @@ const ImageHome = () => {
         </Link>
         <Link href="www.linkedin.com">
           <Image
-            src="/images/LinkedIn2.png"
+            src="/images/LinkedIn.svg"
             alt="image"
             width={50}
             height={50}
@@ -117,7 +115,7 @@ const ImageHome = () => {
         </Link>
         <Link href="www.youtube.com">
           <Image
-            src="/images/YouTube2.png"
+            src="/images/YouTube.svg"
             alt="image"
             width={50}
             height={50}
