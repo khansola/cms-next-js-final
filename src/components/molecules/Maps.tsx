@@ -24,17 +24,18 @@ const Maps = () => {
                     )}
                 </Map>
             </div>
-            <div className="w-[30%] justify-center align-middle">
+            <div className="w-[40%] justify-center align-middle">
                 <h2 className=' font-dmsans text-[#A03C78] text-4xl font-extrabold '>Lokasi kami</h2>
                 <p className='pt-10 w-[100%]'>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit dolor semper at ac tempus enim laoreet massa non.
+                    Jln. Ciremai 2 No 10 Karang Tengah (Ciledug), Kec. Karang Tengah, Kota Tangerang
+                    Telp : 0812 8094 0501 (SMS) dan No HP 08111220308 (WA)
                 </p>
                 <div className="pt-14 gap-10">
-                    <ul className='flex gap-16'>
-                        <li>
-                            <Button title="Send message" />
+                    <ul className='flex flex-wrap gap-5'>
+                        <li className=" p-5 px-16 border-2 rounded-full text-white border-[#843C74] bg-[#843C74]">
+                            <Button title="Lihat Lokasi" />
                         </li>
-                        <li>
+                        <li className=" p-5 px-10 border-2 rounded-full text-[#843C74] border-[#843C74]">
                             <Button title="Hubungi Whatapps" />
                         </li>
                     </ul>

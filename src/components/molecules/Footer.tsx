@@ -88,8 +88,8 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="flex w-full #4a5568">
-          <div className="p-5 flex flex-wrap w-auto">
+        <div className="flex flex-wrap w-full ">
+          <div className="flex flex-wrap ">
             <ul>
               <p className=" pb-8 text-[#843C74] font-bold text-[24px]">
                 <Link href={"/"}>Tautan Cepat</Link>
@@ -106,12 +106,10 @@ function Footer() {
               })}
             </ul>
           </div>
-
           <div className="w-1/5"></div>
-
-          <div className="p-5 flex flex-wrap w-auto ">
+          <div className="flex flex-wrap ">
             <ul>
-              <p className=" text-[24px] text-[#843C74] pb-8  font-bold">
+              <p className=" text-[24px] text-[#843C74] pb-8 font-bold">
                 <Link href={"/"}>Toko</Link>
               </p>
               {links.slice(4, 7).map((e, i) => {
@@ -125,6 +123,14 @@ function Footer() {
                 );
               })}
             </ul>
+            <div>
+              <Image
+                src="/images/salt.png"
+                alt="sehjira"
+                height={100}
+                width={150}
+              />
+            </div>
           </div>
         </div>
       </footer>

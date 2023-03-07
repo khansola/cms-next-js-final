@@ -4,7 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import Button from "../atoms/Button";
 import Image from "next/image";
 import Link from "next/link";
-import TypewriterComponent from "typewriter-effect";
+
 
 
 
@@ -33,6 +33,16 @@ const slideImages = [
     caption: "SEHJIRA Deaf Foundation",
     desc: "Yayasan SEHJIRA (Sehat Jiwa Raga) merupakan yayasan yang menaungi dan memberikan perlindungan bagi para penyandang disabilitas khususnya disabilitas rungu/Tuli.",
   },
+  {
+    url: "images/image-home4.jpg",
+    caption: "SEHJIRA Deaf Foundation",
+    desc: "Yayasan SEHJIRA (Sehat Jiwa Raga) merupakan yayasan yang menaungi dan memberikan perlindungan bagi para penyandang disabilitas khususnya disabilitas rungu/Tuli.",
+  },
+  {
+    url: "images/image-home5.jpg",
+    caption: "SEHJIRA Deaf Foundation",
+    desc: "Yayasan SEHJIRA (Sehat Jiwa Raga) merupakan yayasan yang menaungi dan memberikan perlindungan bagi para penyandang disabilitas khususnya disabilitas rungu/Tuli.",
+  },
 ];
 
 
@@ -44,12 +54,13 @@ const ImageHome = () => {
       <Slide duration={3000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <div 
-            className="
+            <div
+              className="
             flex 
-            flex-col" 
-            style={{ ...divStyle,
-            backgroundImage: `url(${slideImage.url})`,
+            flex-col"
+              style={{
+                ...divStyle,
+                backgroundImage: `url(${slideImage.url})`,
               }}
             >
               <div className="flex flex-col ">
@@ -63,7 +74,7 @@ const ImageHome = () => {
                   </p>
                 </div>
                 <div className=" self-start justify-self-start  bg-white rounded-full  ml-16 mt-5 h-14 flex border-black border-4 text-[#843C74] font-bold    ">
-                  <Button style=" items-center justify-center flex  " title="PELAJARI LEBIH LANJUT" />
+                  <Button style=" items-center justify-center flex " title="PELAJARI LEBIH LANJUT" />
                   <span className="pt-3 pl-3 text-[29px]">🡪</span>
                 </div>
               </div>
@@ -71,48 +82,48 @@ const ImageHome = () => {
           </div>
         ))}
       </Slide>
-      <div className=" flex flex-col justify-center fixed mt-52 top-16   ">
-                  <Link href="www.facebook.com">
-                    <Image
-                      src="/images/Facebook2.png"
-                      alt="image"
-                      width={50}
-                      height={50}
-                    />
-                  </Link>
-                  <Link href="www.twitter.com">
-                    <Image
-                      src="/images/Twitter2.png"
-                      alt="image"
-                      width={50}
-                      height={50}
-                    />
-                  </Link>
-                  <Link href="www.instagram.com">
-                    <Image
-                      src="/images/Instagram2.png"
-                      alt="image"
-                      width={50}
-                      height={50}
-                    />
-                  </Link>
-                  <Link href="www.linkedin.com">
-                    <Image
-                      src="/images/LinkedIn2.png"
-                      alt="image"
-                      width={50}
-                      height={50}
-                    />
-                  </Link>
-                  <Link href="www.youtube.com">
-                    <Image
-                      src="/images/YouTube2.png"
-                      alt="image"
-                      width={50}
-                      height={50}
-                    />
-                  </Link>
-                </div>
+      <div className=" flex flex-col justify-center fixed mt-36 top-10   ">
+        <Link href="www.facebook.com">
+          <Image
+            src="/images/Facebook2.png"
+            alt="image"
+            width={50}
+            height={50}
+          />
+        </Link>
+        <Link href="www.twitter.com">
+          <Image
+            src="/images/Twitter2.png"
+            alt="image"
+            width={50}
+            height={50}
+          />
+        </Link>
+        <Link href="www.instagram.com">
+          <Image
+            src="/images/Instagram2.png"
+            alt="image"
+            width={50}
+            height={50}
+          />
+        </Link>
+        <Link href="www.linkedin.com">
+          <Image
+            src="/images/LinkedIn2.png"
+            alt="image"
+            width={50}
+            height={50}
+          />
+        </Link>
+        <Link href="www.youtube.com">
+          <Image
+            src="/images/YouTube2.png"
+            alt="image"
+            width={50}
+            height={50}
+          />
+        </Link>
+      </div>
     </div>
   );
 };

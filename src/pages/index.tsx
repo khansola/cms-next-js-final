@@ -5,11 +5,11 @@ import PrimaryNavigation from "@/components/molecules/PrimaryNavigation";
 import Section from "@/components/molecules/Section";
 import ImageHome from "@/components/molecules/ImageHome";
 import ProgramList from "@/components/molecules/ProgramList";
-import { DarkMode } from "@mui/icons-material";
 import DarkModeToggle from "@/components/molecules/DarkModeToggle";
+
 import axios from "axios";
-import react, { useEffect, useState } from "react";
-import test from "node:test";
+import Galery from "@/components/molecules/Article1";
+import Article1 from "@/components/molecules/Galery";
 
 const index = (props:any) => {
 
@@ -19,11 +19,12 @@ const index = (props:any) => {
         title="Home"
         description="Description of Create Next Page by Faizmul"
       />
-      
       <DarkModeToggle />
       <ImageHome />
       <Section />
       <ProgramList />
+      <Article1 />
+      <Galery />
     </BlankTemplate>
   );
 };
