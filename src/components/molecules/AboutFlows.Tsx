@@ -84,7 +84,8 @@ const AboutFlows = () => {
 
     return (
 
-        <div className='flex flex-wrap px[7%]'>
+        
+        <div className='flex flex-wrap px[7%] gap-5'>
             {timsehjira.map((e, i) => {
                 return (
                     <CardCircle

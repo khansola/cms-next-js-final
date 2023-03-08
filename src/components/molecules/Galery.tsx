@@ -23,7 +23,8 @@ const Galery = () => {
                     return <CardRectangle
                         key={i}
                         image={e.image}
-                    />;
+                    >
+                    </CardRectangle>
                 })}
             </div>
             <div className=" text-[#843C74] mt-7 text-center text-[15px] font-extrabold ">
